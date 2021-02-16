@@ -1,0 +1,40 @@
+.btn {
+    display: inline-block;
+    padding: 11px 10px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    background-color: #008752;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #26CD8B;
+}
+.btn:active {
+    background-color: #005232;
+}
+
+.hero-btn {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    background-color: #95459A;
+    border: 0;
+    cursor: pointer;
+}
+.hero-btn:hover {
+    background-color: #D665DD;
+}
+.hero-btn:active {
+    background-color: #722A77;
+}
