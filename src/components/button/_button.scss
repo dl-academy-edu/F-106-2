@@ -1,6 +1,7 @@
 .btn {
     display: inline-block;
     padding: 11px 10px;
+    max-width: 181px;
     width: 100%;
     text-align: center;
     font-weight: bold;
@@ -11,18 +12,16 @@
     text-decoration: none;
     text-transform: uppercase;
     border: none;
-    -webkit-transition: background-color 0.3s ease;
-    -o-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
-}
-.btn:hover {
-    background-color: #26CD8B;
-}
-.btn:active {
-    background-color: #005232;
+    &:hover {
+        background-color: #26CD8B;
+    }
+    &:active {
+        background-color: #005232;
+    }
 }
 
-.hero-btn {
+.btn_secondary {
     padding-top: 16px;
     padding-bottom: 16px;
     font-weight: bold;
@@ -31,10 +30,10 @@
     background-color: #95459A;
     border: 0;
     cursor: pointer;
-}
-.hero-btn:hover {
-    background-color: #D665DD;
-}
-.hero-btn:active {
-    background-color: #722A77;
+    &:hover {
+        background-color: #D665DD;
+    }
+    &:active {
+        background-color: #722A77;
+    }
 }

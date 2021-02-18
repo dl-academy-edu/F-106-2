@@ -1,23 +1,23 @@
-.hero {
+
+
+.banner {
   background-color: #E0E7ED;
   background-image: url('/static/images/fon.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-}
-
-.hero-wrapper {
-  padding-top: 148px;
-  padding-bottom: 286px;
-}
-
-.hero-title {
-  max-width: 850px;
-  font-weight: 900;
-  font-size: 90px;
-  line-height: 90px;
-  color: #00559D;
-  letter-spacing: -1px;
+  &__wrapper {
+    padding-top: 148px;
+    padding-bottom: 286px;
+  }
+  &__title {
+    max-width: 850px;
+    font-weight: 900;
+    font-size: 90px;
+    
+    line-height: 90px;
+    color: #00559D;
+    letter-spacing: -1px;
+  }
 }
 
 .hero-btn-wrapper {

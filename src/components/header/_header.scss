@@ -1,80 +1,54 @@
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   padding-top: 33px;
   padding-bottom: 33px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header-logo {
-  margin-right: 25px;
-}
-
-.header-logo[href]:hover {
-  opacity: 0.7;
-  mix-blend-mode: multiply;
-}
-
-.header-logo[href]:active {
-  mix-blend-mode: multiply;
-  opacity: 0.4;
-}
-
-.header-phone {
-  margin-right: 24px;
-  font-weight: 800;
-  font-size: 17px;
-  line-height: 20px;
-  color: #95459A;
-  text-decoration: none;
-}
-
-.header-phone:hover {
-  opacity: .7;
-}
-
-.header-btn-wrapper {
-  width: 181px;
-}
-
-
-.main-nav {
-  margin-right: auto;
-}
-
-.menu-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.menu-item {
-  margin-right: 15px;
-}
-
-.menu-item:last-child {
-  margin-right: 0;
-}
-
-.menu-list .item-link {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 20px;    
-  color: #333333;
-  text-decoration: none;
-}
-
-.menu-list .item-link:hover {
-  color: #008752;
-}
-
-.menu-list .item-link:active {
-  color: #333333;
+  align-items: center;
+  &__logo {
+    margin-right: 25px;
+    &:hover {
+      opacity: 0.7;
+      mix-blend-mode: multiply;
+    }
+    &:active {
+      mix-blend-mode: multiply;
+      opacity: 0.4;
+    }
+  }
+  &__nav {
+    margin-right: auto;
+  }
+  &__nav_list {
+    display: flex;
+  }
+  &__nav_item {
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__nav_link {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;    
+    color: #333333;
+    text-decoration: none;
+    &:hover {
+      color: #008752;
+    }
+    &:active {
+      color: #333333;
+    }
+  }
+  &__phone {
+    margin-right: 24px;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 20px;
+    color: #95459A;
+    text-decoration: none;
+    &:hover {
+      opacity: .7;
+    }
+  }
 }
