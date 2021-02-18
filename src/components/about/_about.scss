@@ -1,0 +1,46 @@
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 110px;
+}
+
+.about-us-wrapper {
+  padding-top: 8px;
+  width: 480px;
+}
+
+.about-us-title {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #005DAB;
+}
+
+.about-us-desc {
+  margin-top: 35px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.about-us-btn-wrapper {
+  margin-top: 20px;
+  width: 181px;
+}
+
+.about-us-img-wrapper {
+  position: relative;
+}
+
+.about-us-img-wrapper::before {
+  content: '';
+  position: absolute;
+  right: -110px;
+  top: 30px;
+  width: 570px;
+  height: 500px;
+  background-color: #008752;
+  z-index: -1;
+}

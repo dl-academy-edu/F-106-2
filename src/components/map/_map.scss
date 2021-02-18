@@ -1,54 +1,62 @@
 .map {
-    margin-top: 68px;
-    padding-top: 40px;
-    padding-bottom: 133px;
-    background-image: url('/images/map.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  margin-top: 80px;
+  padding-top: 40px;
+  padding-bottom: 133px;
+  background-color: #eeeeee;
+  background-image: url('static/images/section-map.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .map-wrapper {
-    padding-top: 50px;
-    padding-right: 44px;
-    padding-left: 44px;
-    padding-bottom: 26px;
-    background: #008752;
-    width: 380px;
+  padding-top: 50px;
+  padding-left: 44px;
+  padding-right: 44px;
+  padding-bottom: 26px;
+  width: 380px;
+  background-color: #008752;
 }
 
 .map-title {
-    margin: 0;
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 36px;
-    color: #FFFFFF;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
 }
 
 .map-desc {
-    margin: 0;
-    margin-top: 17px;
-    margin-bottom: 23px;
-    font-size: 15px;
-    line-height: 18px;
-    color: #FFFFFF;
+  margin-top: 17px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
 }
 
 .map-phone {
-    font-size: 15px;
-    line-height: 18px;
-    color: #FFFFFF;
-    text-decoration: underline;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 24px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
-.map-phone:hover {
-    opacity: 0.7;
+.map-btn-wrapper {
+  width: 181px;
+  margin-top: 23px;
 }
 
-.map-phone:active {
-    opacity: 0.5;
+.map-btn {
+  background-color: #95459A;
 }
 
-.map-button-wrapper {
-    margin-top: 23px;
-    width: 180px;
+.map-btn:hover {
+  background-color: #D665DD;
+}
+
+.map-btn:active {
+  background-color: #722A77;
 }

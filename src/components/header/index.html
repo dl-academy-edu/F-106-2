@@ -21,6 +21,10 @@
   </nav>
   <a href="tel:719-431-9698" class="header-phone">719-431-9698</a>
   <div class="header-btn-wrapper">
-    <a class="btn" href="/pages/contacts">Contact Us</a>
+    @@include('button/index.html', {
+      "href":"/pages/contacts",
+      "class": "",
+      "text":"Contact Us"
+    })
   </div>
 </header>

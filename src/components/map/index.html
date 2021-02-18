@@ -5,7 +5,11 @@
         <p class="map-desc">9420 Cedar CT, Thornton, CO 80229</p>
         <a href="tel:720 605-9399" class="map-phone">(720) 605-9399 </a>
         <div class="map-btn-wrapper">
-          <a href="" class="btn map-btn">Learn More</a>
+          @@include('button/index.html', {
+            "href":"#",
+            "class": "map-btn",
+            "text":"Learn More"
+          })
         </div>
       </div>
     </div>

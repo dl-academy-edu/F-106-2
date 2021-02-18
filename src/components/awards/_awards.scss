@@ -1,0 +1,16 @@
+.awards {
+  margin-top: 106px;
+}
+
+.awards-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.awards-item:hover {
+  opacity: .5;
+}
+
+.awards-item:active {
+  opacity: .2;
+}
