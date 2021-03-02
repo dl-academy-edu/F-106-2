@@ -29,7 +29,9 @@
     line-height: 29px;
     background-color: #95459A;
     border: 0;
+    max-width: 100%;
     cursor: pointer;
+    
     &:hover {
         background-color: #D665DD;
     }

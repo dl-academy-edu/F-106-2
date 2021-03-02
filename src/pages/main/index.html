@@ -1,34 +1,94 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <link href="/common.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Главная</title>
-  </head>
-  <body>
-    @@include('header/index.html' )
-    <main class="main">
-      <section class="banner">
-        <div class="container">
-          <div class="banner__wrapper">
-            <h1 class="banner__title">The world’s leading cleaning company</h1>
-              <div class="hero-btn-wrapper">
-                <button class="btn btn_secondary">Get a Free Estimate</button>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="/common.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/static/images/favicon.ico">
+  <title>Главная</title>
+</head>
+
+<body>
+  @@include('header/index.html' )
+  <main class="main">
+    <section class="banner">
+      <div class="container">
+        <div class="banner__wrapper">
+          <h1 class="banner__title">The world’s leading cleaning company</h1>
+          <div class="hero-btn-wrapper">
+            <button class="btn btn_secondary">Get a Free Estimate</button>
           </div>
         </div>
-      </section>
-  
+      </div>
+    </section>
+
+
+    <div class="csslider infinity css-slider" id="slider1" >
+      <input type="radio" name="slides" id="slides_1" />
+      <input type="radio" name="slides" checked="checked" id="slides_3" />
+      <input type="radio" name="slides" id="slides_4" />
+      <ul>
+        <li>
+          <h1>Say hello to CSS3</h1>
+          <p>CSSlider is lightweight & easy to use slider. No JS - pure CSS.</p>
+          <a class="nice-link" href="https://github.com/drygiel/csslider"
+              data-text="More examples on github" target="_blank">More examples on github</a>
+        </li>
+        <li>
+          <div id="bg">
+            <div>
+              <h1>CSS Events</h1>
+              <p>When slide 3 is reached - play CSS animation!</p>
+            </div>
+          </div>
+        </li>
+        <li class="scrollable">
+          <h1>Lots of text</h1>
+          <h2>Scrollable one</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi, semper id
+            sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi, semper id sollicitudin urna
+            fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit fusce vel sapien elit in malesuada mi, semper id sollicitudin urna fermentum ut fusce varius
+            nisl ac ipsum gravida vel pretium tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel
+            sapien elit in malesuada mi, semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel
+            pretium tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada
+            mi, semper id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi, semper id
+            sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit fusce vel sapien elit in malesuada mi, semper id sollicitudin urna
+            fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit fusce vel sapien elit in malesuada mi, semper id sollicitudin urna fermentum ut fusce varius
+            nisl ac ipsum gravida vel pretium tellus.
+          </p>
+        </li>
+      </ul>
+      <div class="arrows">
+        <label for="slides_1"></label>
+        <label for="slides_3"></label>
+        <label for="slides_4"></label>
+        <label class="goto-first" for="slides_1"></label>
+        <label class="goto-last" for="slides_4"></label>
+      </div>
+      <div class="navigation">
+        <div>
+          <label for="slides_1"></label>
+          <label for="slides_3"></label>
+          <label for="slides_4"></label>
+        </div>
+      </div>
+    </div>
+
       @@include('service/index.html' )
       @@include('about/index.html' )
       @@include('awards/index.html')
       @@include('map/index.html')
-    </main>
-    @@include('footer/index.html')
-    <script src="/scripts.js"></script>
-  </body>
+  </main>
+  @@include('footer/index.html')
+  <script src="/scripts.js"></script>
+</body>
+
 </html>
