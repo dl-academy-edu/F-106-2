@@ -1,0 +1,39 @@
+.svg {
+    cursor: pointer;
+    
+  }
+  .eyebrow-one,
+  .eyebrow-two,
+  .eye-one, .eye-two, .eye-one_mini, .eye-two_mini {
+    transition: transform .3s;
+  }
+   
+  .svg:hover .eyebrow-one {
+    transform: translateY(-2px);
+  }
+  .svg:hover .eye-one,
+  .svg:hover .eye-one_mini {
+    transform: translateY(2px);
+  }
+  .svg:hover .eye-two,
+  .svg:hover .eye-two_mini {
+    transform: translateY(2px);
+  }
+   
+   
+  .svg:active .eyebrow-one {
+    transform: translateY(0);
+  }
+  .svg:active .eyebrow-two {
+    transform: translateY(-2px);
+  }
+   
+  .svg:active .eye-one,
+  .svg:active .eye-one_mini {
+    transform: translate(-4px, -2px);
+  }
+  .svg:active .eye-two,
+  .svg:active .eye-two_mini {
+    transform: translateY(-2px);
+  }
+  
