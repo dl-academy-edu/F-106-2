@@ -5,6 +5,17 @@
 .awards-list {
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1200px) {
+    margin: 0 -20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.awards-item {
+  @media (max-width: 1200px) {
+    margin: 0 20px;
+  }
 }
 
 .awards-item:hover {

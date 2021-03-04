@@ -23,3 +23,17 @@ window.addEventListener('keydown', function(evt) {
         } 
     } 
 })
+
+
+var btnMobileHeader = document.querySelector('.mobile-btn_js');
+var btnCloseHeader = document.querySelector('.close-btn_js');
+var mobileHeader = document.querySelector('.mobile-header_js');
+
+btnMobileHeader.addEventListener('click', function() {
+    console.log("sdfsdf");
+    mobileHeader.classList.add('mobile-header_open');
+})
+
+btnCloseHeader.addEventListener('click', function(){
+    mobileHeader.classList.remove('mobile-header_open');
+})

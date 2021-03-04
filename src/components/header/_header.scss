@@ -4,6 +4,9 @@
   padding-top: 33px;
   padding-bottom: 33px;
   align-items: center;
+  @media (max-width: 750px) {
+    justify-content: space-between;
+  }
   &__logo {
     margin-right: 25px;
     &:hover {
@@ -14,9 +17,31 @@
       mix-blend-mode: multiply;
       opacity: 0.4;
     }
+    img {
+      max-width: 72px;
+      @media (min-width: 1024px) {
+        max-width: 97px;
+      }
+    }
+    
+  }
+  .btn {
+    @media (max-width: 750px) {
+      display: none;
+    }
+  }
+  &__mobile-btn {
+    background: transparent;
+    border: none;
+    @media (min-width: 751px) {
+      display: none;
+    }
   }
   &__nav {
     margin-right: auto;
+    @media (max-width: 750px) {
+      display: none;
+    }
   }
   &__nav_list {
     display: flex;
@@ -50,5 +75,62 @@
     &:hover {
       opacity: .7;
     }
+  }
+}
+
+
+.mobile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(149, 69, 154, 0.9);
+  transition: .4s;
+  transform: translateX(-1000px);
+  z-index: 2;
+  &_open {
+    transform: translateX(0);
+  }
+  
+  .mobile-container {
+    background: #EEEEEE;
+    box-shadow: 3px 0px 6px rgba(0, 0, 0, 0.25);
+    height: 100vh;
+    width: 75%;
+    padding: 27px 20px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .header__logo {
+    margin-bottom: 52px;
+    img {
+      max-width: 170px;
+    }
+  }
+  .header__nav {
+    display: block;
+    &_list {
+      flex-direction: column;
+    }
+    &_link {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 25px;
+      display: block;
+    }
+  }
+  .header__phone {
+    margin: auto 0 0 20px;
+    display: block;
+  }
+  .btn {
+    display: block;
+  }
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 15%;
   }
 }

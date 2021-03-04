@@ -34,13 +34,6 @@
   position: relative;
 }
 
-.about-us-img-wrapper::before {
-  content: '';
-  position: absolute;
-  right: -110px;
-  top: 30px;
-  width: 570px;
-  height: 500px;
-  background-color: #008752;
-  z-index: -1;
+.about-us-img {
+  box-shadow: 40px 50px 0px #008752;
 }
