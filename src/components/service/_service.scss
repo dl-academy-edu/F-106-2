@@ -1,7 +1,10 @@
 
 
 .services {
-    margin-top: 80px;
+    margin-top: 40px;
+    @media (min-width: 1024px) {
+      margin-top: 80px;
+    }
   }
   
   .services-title {
@@ -27,41 +30,60 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: 50px;
-    margin-bottom: -20px;
-    @media (min-width: 375px) {
-      flex-wrap: nowrap;
+    margin: 30px -10px -20px;
+    @media (min-width: 1024px) {
+      margin-top: 50px;
     }
   }
   
   .services-item {
-    max-width: 45%;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 20px;
+    width: 50%;
+    padding: 10px 10px 20px;
+    // margin-right: 10px;
+    // margin-left: 10px;
+    // margin-bottom: 20px;
     flex-wrap: wrap;
 
-    @media (min-width: 375px) {
-      max-width: 280px;
+    @media (min-width: 767px) {
+      width: 25%;
+      padding: 10px;
     }
   }
   
   .services-item-title {
     margin-top: 16px;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 24px;
     color: #2C3036;
+
+    @media (min-width: 767px) {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 30px;
+      line-height: 36px;
+    }
   }
   
   .services-item-desc {
-    margin-top: 20px;
+    margin: 20px 0;
+    font-size: 12px;
+    line-height: 16px;
+
+    @media (min-width: 767px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 16px;
+      line-height: 21px;
+    }
   }
   
-  .services-btn-wrapper {
-    margin-top: 20px;
-    width: 181px;
-  }
+  // .services-btn-wrapper {
+  //   margin-top: 20px;
+  //   width: 181px;
+  // }
   

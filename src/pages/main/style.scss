@@ -6,17 +6,29 @@
   background-repeat: no-repeat;
   background-position: center;
   &__wrapper {
-    padding-top: 148px;
-    padding-bottom: 286px;
+    padding-top: 57px;
+    padding-bottom: 285px;
+    @media (min-width: 1024px) {
+      padding-top: 148px;
+      padding-bottom: 286px;
+    }
   }
   &__title {
     max-width: 850px;
     font-weight: 900;
-    font-size: 90px;
-    
-    line-height: 90px;
+    font-size: 36px;
+    line-height: 40px;
     color: #00559D;
     letter-spacing: -1px;
+
+    @media (min-width: 768px) {
+      font-size: 60px;
+      line-height: 60px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 90px;
+      line-height: 90px;
+    }
   }
 }
 

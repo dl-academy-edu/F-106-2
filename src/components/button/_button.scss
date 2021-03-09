@@ -5,14 +5,20 @@
     width: 100%;
     text-align: center;
     font-weight: bold;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 16px;
     color: #FFFFFF;
     background-color: #008752;
     text-decoration: none;
     text-transform: uppercase;
     border: none;
     transition: background-color 0.3s ease;
+
+    @media (min-width: 1024px) {
+        font-size: 15px;
+        line-height: 18px;
+      }
+
     &:hover {
         background-color: #26CD8B;
     }
@@ -26,12 +32,17 @@
     padding-top: 16px;
     padding-bottom: 16px;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 18px;
+    line-height: 22px;
     background-color: #95459A;
     border: 0;
     max-width: 100%;
     cursor: pointer;
+
+    @media (min-width: 1024px) {
+        font-size: 24px;
+        line-height: 29px;
+    }
     
     &:hover {
         background-color: #D665DD;

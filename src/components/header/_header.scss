@@ -92,6 +92,10 @@
   &_open {
     transform: translateX(0);
   }
+
+  @media (min-width: 750px) {
+    display: none;
+  }
   
   .mobile-container {
     background: #EEEEEE;
@@ -122,11 +126,12 @@
     }
   }
   .header__phone {
-    margin: auto 0 0 20px;
+    margin: auto auto 20px ;
     display: block;
   }
   .btn {
     display: block;
+    max-width: 100%;
   }
   .close-btn {
     position: absolute;
