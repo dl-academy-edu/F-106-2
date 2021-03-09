@@ -17,6 +17,12 @@
         </div>
     </div>
     <div class="about-us-img-wrapper">
-      <img src="/static/images/chem-dry.jpg" alt="" class="about-us-img">
+      <picture>
+        <source srcset="/static/images/chem-dry-mobile.jpg?20, /static/images/chem-dry-mobile2x.jpg?21 2x" media="(max-width: 767px)">
+        <source srcset="/static/images/chem-dry-tablet.jpg?22, /static/images/chem-dry-tablet2x.jpg?23 2x" media="(max-width: 1023px)">
+        <source srcset="/static/images/chem-dry.jpg?24, /static/images/chem-dry2x.jpg?25 2x">
+          <img src="/static/images/chem-dry.jpg" srcset="/static/images/chem-dry.jpg?26, /static/images/chem-dry2x.jpg?27 2x" alt="" class="about-us-img">
+      </picture>
+      
     </div>
   </section>
