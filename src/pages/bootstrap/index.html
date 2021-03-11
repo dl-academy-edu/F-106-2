@@ -4,17 +4,145 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link href="/common.css" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" /> -->
+    <!-- <link href="/common.css" rel="stylesheet" /> -->
     <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/static/fonts/oswald.css" />
+    <!-- <link rel="stylesheet" href="/static/fonts/oswald.css" /> -->
     <link rel="shortcut icon" href="/static/images/favicon.ico">
     <title>Bootstrap</title>
 </head>
 
 <body>
+    
+    <ul class="navbar navbar-dark bg-dark">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+    </ul>
 
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="content">
+                    <div class="card">
+                        <img src="/static/images/services-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Название карточки</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                        </div>
+                      </div>
+                </div>
+                
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="content">
+                    <div class="card">
+                        <img src="/static/images/services-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Название карточки</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="content">
+                    <div class="card">
+                        <img src="/static/images/services-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Название карточки</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="content">
+                    <div class="card">
+                        <img src="/static/images/services-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Название карточки</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="content">
+                    <div class="card">
+                        <img src="/static/images/services-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Название карточки</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+        
+        <form class="mb-5 row">
+            <div class="alert alert-warning alert-dismissible fade show col-12" role="alert">
+                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+            </div>
+            
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="col-3">
+                <button type="submit" class="btn btn-primary">Button</button>
+            </div>
+            
+          </form>
+        
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
